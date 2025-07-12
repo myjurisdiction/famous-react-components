@@ -19,6 +19,9 @@ export const Components = () => {
         <li className="component-li">
           <Link to="/components/trafficLight">Traffic Light</Link>
         </li>
+        <li className="component-li">
+          <Link to="/components/imageCarousel">Image Carousel</Link>
+        </li>
       </ul>
     </div>
   );

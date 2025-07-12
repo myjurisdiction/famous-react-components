@@ -52,4 +52,48 @@ body {
 .bg-yellow {
   background-color: yellow;
 }
-  
+
+/* Image Carousel */
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  column-gap: 8px;
+}
+
+.image-preview {
+  background-color: black;
+  position: relative;
+}
+
+.image {
+  width : 600px;
+  height: 400px;
+  object-fit: fill;
+}
+
+.bullets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2px;
+  position: absolute;
+  z-index: 1;
+  bottom: 22px;
+  left : 298px;
+}
+
+.bullet {
+  padding : 2px;
+}
+
+.bullet-active {
+  background-color: cyan;
+  color : yellow;
+}
+
+.bullet-unactive {
+  background-color: aquamarine;
+}

@@ -9,6 +9,7 @@ import InfiniteScrollList from "./components/infiniteScroll";
 import PaginatedView from "./components/pagination";
 import StarRatingWrapper from "./components/starRating/index";
 import { TrafficLight } from "./components/trafficLights";
+import { ImageCarouselWraper } from "./components/imageCarousel";
 
 export const MyRouter = () => {
   return (
@@ -22,6 +23,7 @@ export const MyRouter = () => {
           <Route path="listPagination" element={<PaginatedView />} />
           <Route path="infiniteScroll" element={<InfiniteScrollList />} />
           <Route path="trafficLight" element={<TrafficLight />} />
+          <Route path="imageCarousel" element={<ImageCarouselWraper />} />
         </Route>
       </Route>
     </Routes>
