@@ -1,0 +1,48 @@
+* {
+  padding : 0;
+  margin:  0;
+}
+
+.root-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap : 20px;
+}
+
+.nav-bar-active {
+    color: chocolate;
+}
+
+.nav-bar-not-active {
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5;
+}
+
+.components-ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+}
+.component-li {
+    margin-top : 8px;
+    margin-bottom : 8px;
+}

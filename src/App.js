@@ -1,17 +1,14 @@
-import FileExplorerWrapper from "./components/fileExplorer";
-import StarRatingWrapper from "./components/starRating";
-// import InfiniteScrollList from "./components/infiniteScroll";
-import PaginatedView from "./components/pagination";
-import PrintApp from "./components/counter";
+import "./styles.css";
+
+import { Outlet } from "react-router";
+
+import { NavBar } from "./components/NavBar";
 
 export default function App() {
   return (
-    <>
-      {/* <StarRatingWrapper />
-      <FileExplorerWrapper /> */}
-      {/* <InfiniteScrollList /> */}
-      {/* <PaginatedView /> */}
-      <PrintApp />
-    </>
+    <div className="root-container">
+      <NavBar />
+      <Outlet />
+    </div>
   );
 }
