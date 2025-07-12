@@ -1,7 +1,13 @@
+import { TrafficLightComponent } from "./TrafficLightComponent";
+
 export const TrafficLight = () => {
   return (
-    <div>
-      <h1> Traffic lights</h1>
-    </div>
+    <>
+      <TrafficLightComponent orientation={"vertical"} initialColor={"green"} />
+      <TrafficLightComponent
+        orientation={"horizontal"}
+        initialColor={"green"}
+      />
+    </>
   );
 };

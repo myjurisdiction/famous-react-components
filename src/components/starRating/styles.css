@@ -13,4 +13,43 @@ body {
   .star-icon-filled {
     fill: yellow;
   }
+
+  .tl-container {
+    padding: 10px;
+    display: flex;
+    background-color: black;
+    margin: 10px;
+    column-gap: 10px;
+    row-gap : 10px;
+    border-radius: 5px;
+  }
+
+  .horizontal {
+    flex-direction: row;
+  }
+  .vertical {
+    flex-direction: column;
+  }
+
+  .tl-circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
   
