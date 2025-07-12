@@ -40,14 +40,15 @@ const ImageCarousel = ({ images = [] }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const handlePrevClick = () => {
-    if (imageIndex > 0) {
-      setImageIndex(imageIndex - 1);
-    }
+    setImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
+
   const handleNextClick = () => {
-    if (imageIndex < images.length - 1) {
-      setImageIndex(imageIndex + 1);
-    }
+    setImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   const onClickButton = useCallback((index) => {
