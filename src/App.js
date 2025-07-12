@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import FileExplorerWrapper from "./components/fileExplorer";
+import StarRatingWrapper from "./components/starRating";
+// import InfiniteScrollList from "./components/infiniteScroll";
+import PaginatedView from "./components/pagination";
+import PrintApp from "./components/counter";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <StarRatingWrapper />
+      <FileExplorerWrapper /> */}
+      {/* <InfiniteScrollList /> */}
+      {/* <PaginatedView /> */}
+      <PrintApp />
+    </>
   );
 }
-
-export default App;
